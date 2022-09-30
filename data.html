@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="data.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="div1">
+    <h1 class="text-center ">Contact Details</h1>
+    <label for="" class="mb-2">First Name :</label>
+    <input type="text" class="form-control" onchange="fun1()" id="name"> <span id="error1" class="red"></span> <br>
+    <label for="" class="mb-2">Last Name :</label>
+    <input type="text"class="form-control" onchange="fun2()"  id="name2"><span id="error2" class="red"></span>  <br>
+    <label for="" class="mb-2">Email :</label>
+    <input type="text" class="form-control" onchange="fun3()"id="email"><span id="error3" class="red"></span><br>
+    <label for="" class="mb-2">Phone number :</label>
+    <input type="" class="form-control" onchange="fun4()" id="number"><span id="error4" class="red"></span><br>
+    <label for="" class="mb-2">Address :</label>
+    <textarea type="text" class="form-control" id="address"></textarea>
+     <div id="cls11"></div><br>
+    <!-- <input type="checkbox" id="cbox" onclick="btnclick()"><label for="" class="mb-4 mx-3"> All information is correct</label><br>     -->
+    <div class="d-flex">
+    <button class="btn btn-primary" id="addbtn" onclick="add(),btnclick()">Add</button>
+    <button class="btn btn-success save-btn" id="savebtn" onclick="save()">Save</button>
+  </div>
+ </div>
+    <!-- todo code -->
+ <div class="container mt-5"><br>
+    <h1 class="text-center">Record</h1><br>
+    <div class="row mt-2">
+       <div class="col-10">
+        <table class="table table-bordered  ">
+            <thead>
+              <tr>
+                <th class="col-2">Firstname</th>
+                <th class="col-2">Lastname</th>
+                <th class="col-2">Email</th>
+                <th class="col-2">Phone number</th>
+                <th class="col-2">Address</th>
+                <th class="col-2">option</th>
+                
+              </tr>
+            </thead> 
+          </table>
+          <table class="table  table-striped " id="table_data">
+             <tbody>
+              
+             </tbody>
+        </table>
+        
+         <!-- <input id="data" type="text" placeholder="enter data" class="form-control"> -->
+       </div>
+       
+       <div class="col-md-2 ">
+           <!-- <button class="btn btn-md bg-success text-white"  id="add" onclick="add()">Add </button> -->
+           <!-- <button class="btn btn-md bg-success text-white"  id="edit" onclick="Edit_data()">Edit </button> -->
+       </div>
+    </div><br>
+    
+     <div class="col-md-10">
+       <button type="button" class="btn btn-danger  float-end" onclick="dlt()">Delete All</button>
+     </div>
+  </div>
+</div>
+<script src="data.js"></script>
+</body> 
+</html>
